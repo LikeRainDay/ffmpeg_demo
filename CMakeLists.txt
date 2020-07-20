@@ -14,7 +14,7 @@ link_directories(${FFMPEG_DIR}/lib/)
 include_directories(${SDL_DIR}/include/)
 link_directories(${SDL_DIR}/lib/)
 
-add_executable(hc_demo src/main.cpp)
+add_executable(hc_demo src/main.cpp test/rtmp/test_rtmp_pusher.cpp test/rtmp/test_rtmp_pusher.h)
 
 target_link_libraries(
         hc_demo
